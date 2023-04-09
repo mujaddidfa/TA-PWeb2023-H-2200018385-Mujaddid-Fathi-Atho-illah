@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Mahasiswa</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+            padding-bottom: 25px;
+            text-align: center;
+            background: navy;
+            color: white;
+            font-size: 20px;
+            margin: 0%;
+        }
+        .container {
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+        .navbar {
+            flex: 1;
+            background: orange;
+            padding-top: 25px;
+            padding-left: 20px;
+            height: 100vh;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .navbar ul {
+            list-style-type: none;
+        }
+        .navbar li {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: white;
+        }
+        .content {
+            flex: 4;
+            padding: 20px;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        .submit td input {
+            margin-right: 25px;
+            padding: 7px 12px 7px 12px;
+        }
+        .content form table {
+            padding: 30px;
+            font-size: 20px;
+        }
+        .content form table tr td {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="logo">
+        <h1>Formulir Mahasiswa Universitas Ahmad Dahlan</h1>
+    </div>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Form Mahasiswa</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>    
+        </div>
+        <div class="content">
+            <form>
+                <table border="0" cellpadding="5" width="75%">
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>:</td>
+                        <td><input type="text" name="nama" id="nama"></td>
+                    </tr>
+                    <tr>
+                        <td>NIM</td>
+                        <td>:</td>
+                        <td><input type="number" name="nim" id="nim"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>:</td>
+                        <td><input type="password" name="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" name="tl" id="tl"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="jk" id="jk" value="Laki-laki">Laki-laki
+                            <input type="radio" name="jk" id="jk" value="Perempuan">Perempuan
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td>Agama</td>
+                        <td>:</td>
+                        <td>
+                            <select name="agama" id="agama">
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Konghucu">Konghucu</option>
+                            </select>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td><textarea name="alamat" id="alamat"></textarea></td>
+                    </tr>
+                    <tr class="submit">
+                        <td colspan="2"></td>
+                        <td><input type="submit" name="submit" id="submit"><input type="reset" name="reset" id="reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
