@@ -1,17 +1,17 @@
 <?php
     if (isset($_POST['Pilih'])) {
-        echo "Grup Band Favorit Anda adalah : <br>";
-        if (isset($_POST['band1'])) {
-            echo "+ " . $_POST['band1'] . "<br>";
+        echo "Film 2023 Favorit Anda adalah : <br>";
+        if (isset($_POST['film1'])) {
+            echo "+ " . $_POST['film1'] . "<br>";
         }
-        if (isset($_POST['band2'])) {
-            echo "+ " . $_POST['band2'] . "<br>";
+        if (isset($_POST['film2'])) {
+            echo "+ " . $_POST['film2'] . "<br>";
         }
-        if (isset($_POST['band3'])) {
-            echo "+ " . $_POST['band3'] . "<br>";
+        if (isset($_POST['film3'])) {
+            echo "+ " . $_POST['film3'] . "<br>";
         }
-        if (isset($_POST['band4'])) {
-            echo "+ " . $_POST['band4'] . "<br>";
+        if (isset($_POST['film4'])) {
+            echo "+ " . $_POST['film4'] . "<br>";
         }
     }
 ?>

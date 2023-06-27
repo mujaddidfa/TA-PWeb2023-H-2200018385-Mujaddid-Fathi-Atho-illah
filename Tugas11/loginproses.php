@@ -2,10 +2,10 @@
     if (isset($_POST['Login'])) {
         $user = $_POST['username'];
         $pass = $_POST['password'];
-        if ($user == "admin" && $pass == "rahasia") {
-            echo "<h2>Login berhasil, selamat</h2>";
+        if ($user == "mahasiswa" && $pass == "mhs123") {
+            echo "<h2>Login berhasil, selamat datang di Portal UAD</h2>";
         } else {
-            echo "<h2>Login Gagal, maaf ulang lagi</h2>";
+            echo "<h2>Username/Password salah, coba lagi</h2>";
         }
     }
 ?>

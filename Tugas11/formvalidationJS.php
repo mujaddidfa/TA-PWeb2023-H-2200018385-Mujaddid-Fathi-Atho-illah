@@ -8,14 +8,14 @@
     <body>
         <center>
             <h2>
-                Portal UAD
+                Presensi Mata Kuliah Pemrograman Web
             </h2>
         </center>
         <div class="login">
             <form action="#" method="POST" onSubmit="validasi()">
                 <div>
                     <label>
-                        Nama Lengkap:
+                        Nama:
                     </label>
                     <input type="text" name="nama" id="nama">
                 </div>
@@ -27,23 +27,23 @@
                 </div>
                 <div>
                     <label>
-                        Alamat:
+                        Resume:
                     </label>
-                    <textarea cols="40" rows="5" name="alamat" id="alamat">
+                    <textarea cols="40" rows="5" name="resume" id="resume">
                     </textarea>
                 </div>
                 <div>
-                    <input type="submit" value="Daftar" class="tombol">
+                    <input type="submit" value="Kirim" class="tombol">
                 </div>
             </form>
         </div>
     </body>
-    <script type="textjavascript">
+    <script type="text/javascript">
         function validasi() {
             var nama = document.getElementById("nama").value;
             var email = document.getElementById("email").value;
-            var alamat = document.getElementById("alamat").value;
-            if (nama != "" && email != "" && alamat != "") {
+            var resume = document.getElementById("resume").value;
+            if (nama != "" && email != "" && resume != "") {
                 return true;
             } else {
                 alert('Anda harus mengisi data dengan lengkap !');

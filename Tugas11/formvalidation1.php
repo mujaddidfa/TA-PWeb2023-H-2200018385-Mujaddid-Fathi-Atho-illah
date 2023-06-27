@@ -9,8 +9,8 @@
     <body>
         <?php
             // define variables and set to empty values
-            $namaErr = $emailErr = $genderErr = $websiteErr = "";
-            $nama = $email = $gender = $comment = $website = "";
+            $nameErr = $emailErr = $genderErr = $websiteErr = "";
+            $name = $email = $gender = $comment = $website = "";
 
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (empty($_POST["name"])) {
@@ -19,8 +19,8 @@
                 else {
                     $name = test_input($_POST["name"]);
                     // check if name only contains letters and whitespace
-                    if (!preg_match("/^[a-zA-Z ]*$/",$nama)) {
-                        $namaErr = "Only letters and white space allowed";
+                    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+                        $nameErr = "Only letters and white space allowed";
                     }
                 }
 
@@ -70,7 +70,7 @@
         ?>
 
         <h2>
-            PHP Form Validation Example
+            Programmer Data Form
         </h2>
         <p>
             <span class="error">
@@ -88,7 +88,7 @@
                 * <?php echo $emailErr;?>
             </span>
             <br><br>
-            Website: <input type="text" name="website" value="<?php echo $website;?>">
+            Website Portfolio: <input type="text" name="website" value="<?php echo $website;?>">
             <span class="error">
                 <?php echo $websiteErr;?>
             </span>
@@ -99,8 +99,8 @@
             </textarea>
             <br><br>
             Gender:
-            <input type="radio" name="gender" <?php if (isset$("gender") && $gender == "female") echo "checked";?>  value = "female">Female
-            <input type="radio" name="gender" <?php if (isset$("gender") && $gender == "male") echo "checked";?>  value = "male">Male
+            <input type="radio" name="gender" <?php if (isset($gender) && $gender == "female") echo "checked";?>  value = "female">Female
+            <input type="radio" name="gender" <?php if (isset($gender) && $gender == "male") echo "checked";?>  value = "male">Male
             <span class="error">
                 * <?php echo $genderErr;?>
             </span>
