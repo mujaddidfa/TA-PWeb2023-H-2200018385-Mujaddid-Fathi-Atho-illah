@@ -1,5 +1,5 @@
 <?php
-    $transport = array('Jalan kaki', 'Onthel', 'Mobil', 'Pesawat');
+    $transport = array('Ojek', 'Taksi', 'Kereta Api', 'Kapal');
     echo "<pre>";
     print_r($transport);
     echo "</pre>";

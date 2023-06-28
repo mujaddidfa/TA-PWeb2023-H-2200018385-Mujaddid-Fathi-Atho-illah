@@ -1,5 +1,5 @@
 <?php
-    $arrWarna = array("Red", "Orange", "Yellow", "Green", "Blue", "Purple");
+    $arrWarna = array("Black", "Brown", "Gray", "Navy", "Pink", "Violet");
 
     echo "Menampilkan isi array dengan FOR: <br>";
     for ($i = 0; $i < count($arrWarna); $i++) { 

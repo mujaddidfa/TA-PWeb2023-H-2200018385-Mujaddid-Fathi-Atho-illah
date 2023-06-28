@@ -1,8 +1,8 @@
 <?php
-    $arrBuah = array("Mangga", "Apel", "Pisang", "Jeruk");
-    if (in_array("Kedondong", $arrBuah)) {
-        echo "Ada buah Kedondong di dalam array tsb!";
+    $arrBuah = array("Semangka", "Jambu", "Salak", "Rabutan");
+    if (in_array("Salak", $arrBuah)) {
+        echo "Ada buah Salak di dalam array tsb!";
     } else {
-        echo "Tidak ada buah Kedondong di array tersebut";
+        echo "Tidak ada buah Salak di array tersebut";
     }
 ?>

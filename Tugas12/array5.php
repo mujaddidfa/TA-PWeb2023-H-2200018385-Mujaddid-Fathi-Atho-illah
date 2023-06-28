@@ -1,6 +1,6 @@
 <?php
-    $arrWarna = array("Blue", "Black", "Red", "Yellow", "Green");
-    $arrNilai = array("Fulan" => 80, "Fulin" => 90, "Fulun" => 75, "Falan " => 85);
+    $arrWarna = array("Navy", "Gray", "Pink", "Orange", "Brown");
+    $arrNilai = array("Adid" => 80, "Iky" => 90, "Dian" => 75, "Arvin" => 85);
     echo "<pre>";
     print_r($arrWarna);
     echo "<br>";
